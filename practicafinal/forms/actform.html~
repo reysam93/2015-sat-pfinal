@@ -1,0 +1,6 @@
+<form action="/todas" method="POST">
+   <p><tr><td>Título: </td><td>{{ form.title }}</td></tr>
+   <tr><td>Precio: </td><td>{{ form.price }}</td></tr>
+   <tr><td>Fecha: </td><td>{{ form.date }}</td></tr></p<br/>
+   <input type="submit" value="Buscar">
+</form>

@@ -1,0 +1,26 @@
+<form action="/edituserpage" method="POST">
+    <h3>Editar datos:</h3>
+    <p><tr><td>Título: </td><td>{{ form.title }}</td></tr></p>
+    <p><tr><td>Descripción: </td><td>{{ form.desc }}</td></tr></p>
+    <h3>Editar contenido: </h3>
+    <p><tr><td>Color de fondo: </td><td>{{ form.bgCont }}</td></tr></p>
+    <p><tr><td>Color letra: </td><td>{{ form.wordColorCont }}</td></tr></p>
+    <p><tr><td>Tamaño letra: </td><td>{{ form.wordSizeCont }}</td></tr></p>
+    <h3>Editar banner: </h3>
+    <p><tr><td>Color de fondo: </td><td>{{ form.bgBanner }}</td></tr></p>
+    <p><tr><td>Color letra: </td><td>{{ form.wordColorBanner }}</td></tr></p>
+    <p><tr><td>Tamaño letra: </td><td>{{ form.wordSizeBanner }}</td></tr></p>
+    <h3>Editar menu: </h3>
+    <p><tr><td>Color de fondo: </td><td>{{ form.bgMenu }}</td></tr></p>
+    <p><tr><td>Color letra: </td><td>{{ form.wordColorMenu}}</td></tr></p>
+    <p><tr><td>Tamaño letra: </td><td>{{ form.wordSizeMenu }}</td></tr></p>
+    <h3>Editar logbox: </h3>
+    <p><tr><td>Color de fondo: </td><td>{{ form.bgLogBox }}</td></tr></p>
+    <p><tr><td>Color letra: </td><td>{{ form.wordColorLogBox }}</td></tr></p>
+    <p><tr><td>Tamaño fondo: </td><td>{{ form.wordSizeLogBox }}</td></tr></p>
+    <h3>Editar copyrigth: </h3>
+    <p><tr><td>Color de fondo: </td><td>{{ form.bgCopyRigth }}</td></tr></p>
+    <p><tr><td>Color letra: </td><td>{{ form.wordColorCopyRigth }}</td></tr></p>
+    <p><tr><td>Tamaño letra: </td><td>{{ form.wordSizeCopyRigth }}</td></tr></p>
+    <input type='submit' value='Editar'>
+</form>

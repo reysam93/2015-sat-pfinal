@@ -1,0 +1,105 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+}
+
+#header-wrapper{
+    width: 100%;
+    height: 350px;
+    background-color: {{ bgBanner }};
+}
+
+#banner{
+    width: 90%;
+    height: 150px;
+    margin: 0px auto;
+    background-image: url('/img/banner.jpg');
+    background-position: 20% 70%;
+    border: 3px solid #000;
+    color: {{ wcBanner }};
+    font-size: {{ wsBanner }}px;
+}
+
+#banner h1{
+    left: 40px;
+    bottom: -40px;
+    position: relative;
+}
+
+#menu{
+    width: 90%;
+    height: 50px;
+    background: {{ bgMenu }};
+    margin: 0 auto;
+    border-left: 3px solid #000;
+    border-right: 3px solid #000;
+}
+
+#button li{
+    display: inline;
+}
+
+#button li a{
+    color: {{ wcMenu }};
+    font-size: {{ wsMenu }}px;
+    background: {{ bgMenu }};
+    text-decoration: none;
+    float:left;
+    padding: 10px;
+}
+
+#button li a:hover{
+    background-color:rgba(255,255,255,0.2);
+    margin-top: -1px;
+    padding-bottom: 27px;
+}
+
+#logbox{
+    width: 90%;
+    height: 50px;
+    border: 3px solid #000;
+    margin: 0 auto;
+    background-color: {{ bgLogBox }};
+    color: {{ wcLogBox }};
+    font-size: {{ wsLogBox }}px;
+}
+
+#content-wrapper{
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 1px;
+    background-color: {{ bgCont }};
+}
+
+#content{
+    margin-left: 5%;
+    margin-right: 5%;
+    position: relative;
+    color: {{ wordColorCont }};
+    font-size: {{ wordSizeCont }}px; 
+}
+
+
+
+#footer{
+    bottom: 0px;
+    padding-left: 5%;
+    background-color: {{ bgCopyRigth }};
+    color: {{ wcCopyRigth }};
+    font-size: {{ wsCoyRigth }}px;
+}
+
+
+#content li{
+    margin-left: 20px;
+}
+
+.comment{
+    border: 2px solid black;
+    margin: 5px;
+}
+
+.comment p{
+    margin-left: 5px;
+}

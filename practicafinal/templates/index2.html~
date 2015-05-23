@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang='es'>
+<link href='style.css' rel='stylesheet' type='text/css'>
+
+<body>
+    <div id='header-wrapper'>
+        <div id='banner'>
+            <h1>Disfruta Madrid!</h1>
+        </div>
+        <div id='menu'>
+            <ul id='button'>
+                <li class='menu-brand'><a href='/'>Inicio</a></li>
+                <li><a href='/signin'>Registrarse</a></li>
+                <li><a href='/todas'>Todas</a></li>
+                <li><a href='/rss'>CanalRSS</a></li>
+                <li><a href='/ayuda'>Ayuda</a></li>
+            </ul>
+        </div>
+        <div id='logbox'>
+            <p>estoy o no logeado</p>
+        </div>
+    </div>
+    <div id='content-wrapper'>
+        <div id='content'>
+            Contenido
+        </div>
+        <div id='footer'>
+            <p>&copy; Disfruta Madrid | Design by Samuel Rey</p>
+        </div>
+    </div>
+</body>

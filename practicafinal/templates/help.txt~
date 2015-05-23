@@ -1,0 +1,34 @@
+<h2>Ayuda</h2>
+<h3>Descripción</h3>
+<p>Esta página obtiene y presenta las actividades disponibles en la comunidad 
+de madrid en los próximos 100 días, además de permitir crear páginas personales
+donde seleccionar las actividades de interés</p><br/>
+
+<h3>Recursos públicos</h3>
+<lu>
+<li><p><b>Página principal:</b> la página principal de la aplicación 
+muestra las 10 actividades más próximas en el tiempo, así como las páginas de
+otros usuarios. Los títulos de las actividades y de las páginas personales
+son enlaces a las mismas</p></li>
+<li><p><b>/todas:</b> muestra todas las actividades disponibles, con la
+posibilidad de filtrarlas según su fecha, precio o título</li>
+<li><b>/usuario:</b> se corresponde con la página personal del usuario
+ "usuario", y contendrá algunos datos personales y las actividades que dicho 
+usuario haya selecionado.</p></li>
+<li><p><b>/usuario/rss:</b> un canal rss con las incidencias selecionadas
+ por dicho usuario</p></li>
+</lu><br/>
+
+<h3>Opciones para usuarios</h3>
+<p>Los usuarios podrán añadir actividades a su página personal hasta un máximo 
+de 10, así como borrarlas desde su página si dejan de interesarles. También 
+podrán actualizar las actividades de la base de datos mediante un botón en el 
+recurso /todas</p><br/>
+
+<h3>Otras consideraciones:</h3>
+<lu>
+<li><p>Cualquier usuario podrá registrarse siempre que escoja un nombre disponible.
+</p></li><li><p>Los nombres <b>actividad</b>, <b>ayuda</b> y <b>todas</b> 
+<u>NO ESTÁN DISPONIBLES</u>.</p></li>
+<li><p>Hay muchas actividades que procesar, por lo que la aplicación tardará 
+un poco en actualizar la base de datos. Disculpen las molestias.</p></li><br/>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang='es'>
+<link href='/css/style.css' rel='stylesheet' type='text/css'>
+
+<body>
+    <div id='header-wrapper'>
+        <div id='banner'>
+            <h1>Disfruta Madrid!</h1>
+        </div>
+        <div id='menu'>
+            <ul id='button'>
+                {% if not inMain %}
+                    <li><a href='/'>Inicio</a></li>
+                {% endif %}
+                {% if user %}
+                    <li><a href='/{{ user }}'>Página Personal</a></li>
+                    <li><a href='/update'>Página Personal</a></li>
+                {% endif %}
+                <li><a href='/signin'>Registrarse</a></li>
+                <li><a href='/todas'>Todas</a></li>
+                <li><a href='/rss'>CanalRSS</a></li>
+                <li><a href='/ayuda'>Ayuda</a></li>
+            </ul>
+        </div>
+        <div id='logbox'>
+            <p>{{ logged|safe }}</p>
+        </div>
+    </div>
+    <div id='content-wrapper'>
+        <div id='content'>
+            <p>{{ content|safe }}</p>
+        </div>
+        <div id='footer'>
+            <p>&copy; Disfruta Madrid | Design by Samuel Rey</p>
+        </div>
+    </div>
+</body>
