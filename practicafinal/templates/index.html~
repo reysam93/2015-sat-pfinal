@@ -14,7 +14,7 @@
                 {% endif %}
                 {% if user %}
                     <li><a href='/{{ user }}'>Página Personal</a></li>
-                    <li><a href='/update'>Página Personal</a></li>
+                    <li><a href='/update'>Actualizar Actividades</a></li>
                 {% endif %}
                 <li><a href='/signin'>Registrarse</a></li>
                 <li><a href='/todas'>Todas</a></li>
