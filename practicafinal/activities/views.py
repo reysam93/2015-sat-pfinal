@@ -403,11 +403,19 @@ def serveCSS(request):
       'wsMenu': css.wordSizeMenu})
     return HttpResponse(cssTemplate.render(c), content_type="text/css")
 
+def getUpcomingActs():
+    today_date = datetime.datetime.today()
+    last_date = datetime.date(today_date.year+4,1,1)
+    last_time = datetime.time(23, 59, 59)
+    acts = Activity.objects.filter(date__range=(today_date, last_date))
+    acts = acts.filter(time__range=(today_date, last_time))[:10]
+    return acts
+
 
 def mainPage(request):
     if request.method != 'GET':
         return HttpResponseBadRequest("Wrong method")
-    acts = Activity.objects.all()[:10]
+    acts = getUpcomingActs()
     html = '<h2>Actividades:</h2>' + actsToHtml(acts, request)
     pages = UserPage.objects.all()
     html += '<h2>Paginas de usuarios:</h2>' + pagesToHtml(pages, request)
@@ -583,7 +591,7 @@ def getRSS(request, nick):
 def getMainRSS(request):
     if request.method != 'GET':
         return HttpResponseBadRequest("Wrong method")
-    acts = Activity.objects.all()
+    acts = getUpcomingActs()
     rss = '<?xml version="1.0"?>\n''<rss version="2.0">\n<channel>\n\n'
     rss += '<title>Disfruta Madrid!</title>\n<description>Disfruta de las '
     rss += ' actividades que tendran lugar durante los proximos 100 dias en '
